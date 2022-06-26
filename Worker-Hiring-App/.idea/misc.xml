@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/person.xml" value="0.254" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/profile.xml" value="0.2595" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/profile_pic.xml" value="0.193" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_about.xml" value="0.256" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_button.xml" value="0.193" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_nightmode.xml" value="0.2595" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_notifications.xml" value="0.2595" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_setting.xml" value="0.256" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_white.xml" value="0.2595" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_logout.xml" value="0.2595" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_find_job.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_job_ad.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_job.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

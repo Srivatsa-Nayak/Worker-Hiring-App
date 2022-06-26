@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:text="Post An Ad"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/round_back_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/jobname"
+        android:drawableLeft="@drawable/jobname"
+        android:drawablePadding="10dp"
+        android:hint="Work Name"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/jobdesc"
+        android:drawableLeft="@drawable/jobdesc"
+        android:drawablePadding="10dp"
+        android:hint="Work Description"
+        android:textColorHint="@color/white"
+        android:maxLines="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:drawableLeft="@drawable/jobreq"
+        android:drawablePadding="10dp"
+        android:id="@+id/jobreq"
+        android:textColorHint="@color/white"
+        android:hint="Work Requirements"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:id="@+id/phone"
+        android:textColorHint="@color/white"
+        android:hint="Phone Number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:id="@+id/jobemail"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:id="@+id/jobloc"
+        android:textColorHint="@color/white"
+        android:hint="Work Location"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/jobsalary"
+            android:drawableLeft="@drawable/salary"
+            android:drawablePadding="10dp"
+            android:hint="Work Salary"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:drawableLeft="@drawable/date"
+        android:drawablePadding="10dp"
+        android:id="@+id/jobstartdate"
+        android:textColorHint="@color/white"
+        android:hint="Work Start Date"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/postad"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_back_button"
+        android:text="Post Ad"/>
+    </LinearLayout>
+</LinearLayout>
