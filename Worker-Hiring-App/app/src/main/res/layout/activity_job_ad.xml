@@ -12,7 +12,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        android:inputType="textPersonName"
         android:drawableLeft="@drawable/jobadd"
         android:drawablePadding="10dp"
         android:id="@+id/jobname"

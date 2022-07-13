@@ -3,24 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/person.xml" value="0.254" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/profile.xml" value="0.2595" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/profile_pic.xml" value="0.193" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_about.xml" value="0.256" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_button.xml" value="0.193" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_nightmode.xml" value="0.2595" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_notifications.xml" value="0.2595" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_setting.xml" value="0.256" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_back_white.xml" value="0.2595" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/drawable/round_logout.xml" value="0.2595" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_find_job.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_job_ad.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_job.xml" value="0.23777173913043478" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/nayak/AndroidStudioProjects/Navigation/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/about_us.xml" value="0.137" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/btn_cust.xml" value="0.252" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/button_input.xml" value="0.2515" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/custom_input.xml" value="0.2515" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/email.xml" value="0.1815" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/home.xml" value="0.252" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/post_ad_button.xml" value="0.1815" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/round_back_button.xml" value="0.137" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/round_back_nightmode.xml" value="0.137" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/round_back_setting.xml" value="0.1815" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/round_back_white.xml" value="0.1815" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/round_job_ad.xml" value="0.1815" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/drawable/stylesnew.xml" value="0.2485" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity1_main.xml" value="0.27355072463768115" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_find_job.xml" value="0.27355072463768115" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_home_screen.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_job_ad.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_login.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.27355072463768115" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/fragment_job.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/layout/newfragment_settings.xml" value="0.2734375" />
+        <entry key="..\:/Users/wwwsh/MyProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

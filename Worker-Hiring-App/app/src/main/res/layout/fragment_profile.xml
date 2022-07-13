@@ -40,22 +40,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/profile_pic"/>
+
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Person Name"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                android:textStyle="bold"/>
+                android:id = "@+id/fullName"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginTop = "10dp"
+                android:text = "Person Name"
+                android:textColor = "@color/white"
+                android:textSize = "22sp"
+                android:textStyle = "bold"
+                />
 
 
 
@@ -108,6 +105,7 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/addDet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -115,6 +113,16 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/round_back_button"
             android:text="Add Details"/>
+
+        <Button
+            android:id="@+id/seeAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_back_button"
+            android:text="See Your Ads"/>
 
     </LinearLayout>
 
