@@ -8,6 +8,8 @@ public class Database {
     String email1;
     String password1;
 
+    public Database(){    }
+
     public Database(String fname, String lname, String phoneno1,String address1, String email1, String password1) {
         this.fname = fname;
         this.lname = lname;

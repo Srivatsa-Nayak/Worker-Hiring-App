@@ -1,11 +1,9 @@
 package com.example.myproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,13 +13,10 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class HomeFragment extends Fragment {
-
+public class yourAds extends Fragment {
     RecyclerView recyclerView;
     DatabaseReference database;
     MainAdapter mainAdapter;
-
-    Button seeAds;
 //    ArrayList<MainModel> list;
 
 
@@ -29,8 +24,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView (LayoutInflater inflater, ViewGroup container,
                               Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_home, container , false);
-
-        seeAds = view.findViewById(R.id.seeAds);
 
         recyclerView = view.findViewById(R.id.joblist);
         database = FirebaseDatabase.getInstance().getReference("WorkDetails");
@@ -59,16 +52,6 @@ public class HomeFragment extends Fragment {
 //            public void onCancelled(@NonNull DatabaseError error) {
 //            }
 //        });
-
-
-//        seeAds.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                seeyourads();
-//            }
-//        });
-
-
         return view;
     }
 
@@ -83,9 +66,4 @@ public class HomeFragment extends Fragment {
         super.onStop();
         mainAdapter.startListening();
     }
-
-    public void seeyourads(View v){
-        startActivity(new Intent(getContext(), yourAds.class));
-    }
-
 }

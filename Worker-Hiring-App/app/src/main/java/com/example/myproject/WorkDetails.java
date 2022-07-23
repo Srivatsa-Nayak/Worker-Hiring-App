@@ -12,6 +12,9 @@ public class WorkDetails {
     String wstartdate;
     String wloc;
 
+    public WorkDetails(){}
+
+
     public WorkDetails(String wname, String wemail, String wdesc, String wreq, String wphone, String wsalary, String wstartdate, String wloc) {
         this.wname = wname;
         this.wemail = wemail;

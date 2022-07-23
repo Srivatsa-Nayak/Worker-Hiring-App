@@ -5,7 +5,7 @@
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:background = "@color/white"
-    android:gravity = "center"
+    android:gravity = "center_horizontal"
     android:orientation = "vertical"
     tools:context = ".HomeFragment"
     >
@@ -16,23 +16,24 @@
         >
 
         <TextView
-            android:layout_width = "match_parent"
-            android:layout_height = "match_parent"
-            android:fontFamily = "casual"
-            android:text = "Post An Ad"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerInParent = "true"
+            android:text = "Post an Ad"
             android:textColor = "#00E0C6"
-            android:textSize = "30sp"
+            android:layout_marginTop="20dp"
+            android:textSize = "20sp"
             android:textStyle = "bold"
             ></TextView>
     </LinearLayout>
 
     <LinearLayout
+        android:background="@drawable/round_back_white"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:layout_marginStart = "20dp"
-        android:layout_marginTop = "40dp"
+        android:layout_marginTop = "120dp"
         android:layout_marginEnd = "20dp"
-        android:background = "@drawable/round_job_ad"
         android:orientation = "vertical"
         android:padding = "15dp"
         >
@@ -42,7 +43,6 @@
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
             android:layout_marginStart = "20dp"
-
             android:layout_marginEnd = "20dp"
             android:drawableLeft = "@drawable/jobname"
             android:drawablePadding = "10dp"
@@ -51,7 +51,9 @@
             android:maxLines = "1"
             android:paddingStart = "20dp"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColor="#9C9B9E"
+            android:textColorHint = "#9C9B9E"
+            android:backgroundTint="#9C9B9E"
             />
 
         <EditText
@@ -66,12 +68,15 @@
             android:inputType = "text"
             android:maxLines = "1"
             android:paddingStart = "20dp"
+            android:textColor="#9C9B9E"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
+            android:backgroundTint="#9C9B9E"
             />
 
         <EditText
             android:id = "@+id/workreq"
+            android:backgroundTint="#9C9B9E"
             android:layout_width = "match_parent"
             android:layout_height = "wrap_content"
             android:layout_marginStart = "20dp"
@@ -82,8 +87,9 @@
             android:importantForAutofill = "no"
             android:inputType = "text"
             android:paddingStart = "20dp"
+            android:textColor="#9C9B9E"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
             />
 
         <EditText
@@ -97,8 +103,10 @@
             android:hint = "Phone Number"
             android:inputType = "phone"
             android:paddingStart = "20dp"
+            android:textColor="#9C9B9E"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
+            android:backgroundTint="#9C9B9E"
             />
 
         <EditText
@@ -109,11 +117,13 @@
             android:layout_marginEnd = "20dp"
             android:drawableLeft = "@drawable/email"
             android:drawablePadding = "10dp"
+            android:backgroundTint="#9C9B9E"
             android:hint = "Email"
+            android:textColor="#9C9B9E"
             android:inputType = "textEmailAddress"
             android:paddingStart = "20dp"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
             />
 
         <EditText
@@ -124,11 +134,13 @@
             android:layout_marginEnd = "20dp"
             android:drawableLeft = "@drawable/location"
             android:drawablePadding = "10dp"
+            android:textColor="#9C9B9E"
             android:hint = "Work Location"
             android:inputType = "text"
             android:paddingStart = "20dp"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
+            android:backgroundTint="#9C9B9E"
             />
 
         <EditText
@@ -140,11 +152,13 @@
             android:drawableLeft = "@drawable/salary"
             android:drawablePadding = "10dp"
             android:hint = "Work Salary"
+            android:backgroundTint="#9C9B9E"
             android:inputType = "text"
             android:maxLines = "1"
             android:paddingStart = "20dp"
+            android:textColor="#9C9B9E"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColorHint = "#9C9B9E"
             />
 
         <EditText
@@ -157,9 +171,11 @@
             android:drawablePadding = "10dp"
             android:hint = "Work Start Date"
             android:inputType = "date"
+            android:backgroundTint="#9C9B9E"
             android:paddingStart = "20dp"
             android:paddingEnd = "0dp"
-            android:textColorHint = "@color/white"
+            android:textColor="#9C9B9E"
+            android:textColorHint = "#9C9B9E"
             />
 
         <Button
@@ -171,7 +187,7 @@
             android:layout_marginEnd = "20dp"
             android:background = "@drawable/post_ad_button"
             android:text = "Post Ad"
-            android:textColor = "#00E0C6"
+            android:textColor = "@color/white"
             />
     </LinearLayout>
 </LinearLayout>

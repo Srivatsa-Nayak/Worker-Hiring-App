@@ -1,11 +1,6 @@
 package com.example.myproject;
 
-import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,13 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
+import java.util.regex.Pattern;
 
 
 public class JobFragment extends Fragment {
@@ -31,6 +28,7 @@ public class JobFragment extends Fragment {
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference database;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -78,6 +76,9 @@ public class JobFragment extends Fragment {
         String wdesc = workdesc.getText().toString().trim();
         String wreq = workreq.getText().toString().trim();
 
+        Pattern pattern = Pattern.compile("^[6-8]{1}[0-9]{9}");
+
+
         if(wname.isEmpty()){
             workname.setError("Name required!!");
             workname.requestFocus();
@@ -98,6 +99,12 @@ public class JobFragment extends Fragment {
 
         if(wphone.isEmpty()){
             phone.setError("Phone number required!!");
+            phone.requestFocus();
+            return;
+        }
+
+        if(wphone.length()<10){
+            phone.setError("Enter valid phone no.!!");
             phone.requestFocus();
             return;
         }
@@ -147,7 +154,7 @@ public class JobFragment extends Fragment {
 //        });
 
 
-        FirebaseDatabase.getInstance().getReference().child("Work Details").push()
+        FirebaseDatabase.getInstance().getReference().child("WorkDetails").push()
                 .setValue(workDetails)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
