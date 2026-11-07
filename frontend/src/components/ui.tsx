@@ -174,7 +174,7 @@ export function StatusBadge({ status, viewer }: { status: ApplicationStatus; vie
 /** The pay, painted big like a price on a shop board. */
 export function PayTag({ amount, period, size = "md" }: { amount: number; period: SalaryPeriod; size?: "md" | "lg" }) {
   return (
-    <div className="inline-flex flex-col items-start rounded-sm bg-sign text-on-sign px-3 py-1.5 shrink-0">
+    <div className="inline-flex flex-col items-start self-start rounded-sm bg-sign text-on-sign px-3 py-1.5 shrink-0">
       <span className={`sign ${size === "lg" ? "text-5xl" : "text-3xl"}`}>{formatPay(amount)}</span>
       <span className="text-[0.8rem] font-semibold">{PERIOD_LABEL[period]}</span>
     </div>

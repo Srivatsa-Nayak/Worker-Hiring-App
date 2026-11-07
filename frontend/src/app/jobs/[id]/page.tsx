@@ -43,7 +43,7 @@ export default function JobDetailPage() {
       </Link>
 
       <article className="mt-4 rounded-md border border-line bg-surface">
-        <div className="p-5 sm:p-7 border-b border-line flex flex-col-reverse sm:flex-row gap-5 sm:items-start sm:justify-between">
+        <div className="p-5 sm:p-7 border-b border-line flex flex-col sm:flex-row gap-5 sm:items-start sm:justify-between">
           <div>
             <p className="text-muted">
               {job.categoryLabel}, posted {timeAgo(job.createdAt)} by {job.postedBy.name}

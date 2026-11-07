@@ -46,7 +46,7 @@ export function MyAdsList({ compact = false }: { compact?: boolean }) {
             >
               {j.status === "OPEN" ? "Open" : "Closed"}
             </span>
-            <span className="text-right min-w-[7rem]">
+            <span className="sm:text-right sm:min-w-[7rem]">
               <span className="sign-mid text-2xl">{j.applicationCount}</span>{" "}
               <span className="text-sm text-muted">{j.applicationCount === 1 ? "applicant" : "applicants"}</span>
             </span>
