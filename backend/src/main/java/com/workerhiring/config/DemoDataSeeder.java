@@ -48,13 +48,13 @@ public class DemoDataSeeder implements ApplicationRunner {
         if (users.count() > 0) {
             return;
         }
-        User ravi = userService.register(new RegisterRequest("Ravi", "Shetty", "ravi@example.com",
+        User ramesh = userService.register(new RegisterRequest("Ramesh", "Shetty", "ramesh@example.com",
                 "9845012345", "Car Street, Mangaluru", DEMO_PASSWORD));
-        User meera = userService.register(new RegisterRequest("Meera", "Kamath", "meera@example.com",
+        User suresh = userService.register(new RegisterRequest("Suresh", "Kamath", "suresh@example.com",
                 "9900112233", "Hampankatta, Mangaluru", DEMO_PASSWORD));
-        User arjun = userService.register(new RegisterRequest("Arjun", "Rao", "arjun@example.com",
+        User mahesh = userService.register(new RegisterRequest("Mahesh", "Rao", "mahesh@example.com",
                 "9886001122", "Kankanady, Mangaluru", DEMO_PASSWORD));
-        userService.updateProfile(arjun.getId(), new UpdateProfileRequest("Arjun", "Rao", "9886001122",
+        userService.updateProfile(mahesh.getId(), new UpdateProfileRequest("Mahesh", "Rao", "9886001122",
                 "Kankanady, Mangaluru",
                 "Two years as a shop assistant in a grocery store. Can handle billing and stock. Own two-wheeler with licence."));
 
@@ -63,32 +63,32 @@ public class DemoDataSeeder implements ApplicationRunner {
                 "Car Street, Mangaluru", 14000, Job.SalaryPeriod.MONTH,
                 "Help customers find items, keep shelves stocked and the shop clean. Shop is open 8am to 8pm with a lunch break.",
                 "Basic Kannada or Tulu. Able to lift 20 kg bags. Honest and on time.",
-                soon, 2, "9845012345", "ravi@example.com"), ravi.getId());
+                soon, 2, "9845012345", "ramesh@example.com"), ramesh.getId());
         jobService.create(new JobRequest("Delivery rider", JobCategory.DELIVERY,
                 "Car Street, Mangaluru", 600, Job.SalaryPeriod.DAY,
                 "Deliver grocery orders to homes within 5 km of the shop. Fuel paid separately.",
                 "Own two-wheeler and valid driving licence. Smartphone for order updates.",
-                soon, 1, "9845012345", "ravi@example.com"), ravi.getId());
+                soon, 1, "9845012345", "ramesh@example.com"), ramesh.getId());
         jobService.create(new JobRequest("Cashier for bakery", JobCategory.CASHIER,
                 "Hampankatta, Mangaluru", 15000, Job.SalaryPeriod.MONTH,
                 "Handle billing and UPI payments at the counter, pack orders, and close the till at end of day.",
                 "Comfortable with simple billing software. Previous counter experience preferred.",
-                soon.plusDays(3), 1, "9900112233", "meera@example.com"), meera.getId());
+                soon.plusDays(3), 1, "9900112233", "suresh@example.com"), suresh.getId());
         jobService.create(new JobRequest("Kitchen helper", JobCategory.KITCHEN,
                 "Hampankatta, Mangaluru", 500, Job.SalaryPeriod.DAY,
                 "Prep vegetables, wash utensils and help the baker during the morning rush (5am to 11am).",
                 "Early riser. Clean habits. No experience needed, we will train you.",
-                soon, 2, "9900112233", "meera@example.com"), meera.getId());
+                soon, 2, "9900112233", "suresh@example.com"), suresh.getId());
         jobService.create(new JobRequest("Tailor for alterations", JobCategory.TAILORING,
                 "Hampankatta, Mangaluru", 120, Job.SalaryPeriod.HOUR,
                 "Part-time alterations on sarees, blouses and school uniforms. Flexible hours, work on our machines.",
                 "Must be able to do hemming, fitting and blouse stitching neatly.",
-                soon.plusDays(10), 1, "9900112233", "meera@example.com"), meera.getId());
+                soon.plusDays(10), 1, "9900112233", "suresh@example.com"), suresh.getId());
 
-        applicationService.apply(groceryHelper.id(), arjun.getId(),
+        applicationService.apply(groceryHelper.id(), mahesh.getId(),
                 "I live 2 km from Car Street and can start next week.");
 
-        log.info("Seeded demo data. Log in as ravi@example.com, meera@example.com or arjun@example.com with password '{}'",
+        log.info("Seeded demo data. Log in as ramesh@example.com, suresh@example.com or mahesh@example.com with password '{}'",
                 DEMO_PASSWORD);
     }
 }

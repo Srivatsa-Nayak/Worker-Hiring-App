@@ -57,8 +57,8 @@ class HiringFlowTest {
 
     @Test
     void fullHiringFlow() throws Exception {
-        String recruiter = register("Ravi", "ravi@test.com");
-        String seeker = register("Arjun", "arjun@test.com");
+        String recruiter = register("Ramesh", "ramesh@test.com");
+        String seeker = register("Mahesh", "mahesh@test.com");
 
         // Recruiter posts an ad
         long jobId = body(mvc.perform(post("/api/jobs").header("Authorization", "Bearer " + recruiter)
@@ -90,7 +90,7 @@ class HiringFlowTest {
                 .andExpect(jsonPath("$.unread").value(1));
         mvc.perform(get("/api/jobs/" + jobId + "/applications").header("Authorization", "Bearer " + recruiter))
                 .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].applicant.name").value("Arjun Test"));
+                .andExpect(jsonPath("$[0].applicant.name").value("Mahesh Test"));
 
         // Seeker can't see applicants of someone else's ad
         mvc.perform(get("/api/jobs/" + jobId + "/applications").header("Authorization", "Bearer " + seeker))
@@ -131,10 +131,10 @@ class HiringFlowTest {
     @Test
     void authRules() throws Exception {
         mvc.perform(get("/api/jobs/mine")).andExpect(status().isUnauthorized());
-        String token = register("Meera", "meera@test.com");
+        String token = register("Suresh", "suresh@test.com");
 
         // Duplicate email
-        var dup = Map.of("firstName", "M", "lastName", "K", "email", "MEERA@test.com",
+        var dup = Map.of("firstName", "M", "lastName", "K", "email", "SURESH@test.com",
                 "phone", "9876543210", "address", "x", "password", "secret123");
         mvc.perform(post("/api/auth/register").contentType(MediaType.APPLICATION_JSON)
                 .content(json.writeValueAsString(dup))).andExpect(status().isConflict());
@@ -146,7 +146,7 @@ class HiringFlowTest {
                 .andExpect(jsonPath("$.fieldErrors.title").exists());
 
         mvc.perform(post("/api/auth/login").contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"email\":\"meera@test.com\",\"password\":\"wrong\"}"))
+                        .content("{\"email\":\"suresh@test.com\",\"password\":\"wrong\"}"))
                 .andExpect(status().isUnauthorized());
 
         mvc.perform(post("/api/auth/logout").header("Authorization", "Bearer " + token))

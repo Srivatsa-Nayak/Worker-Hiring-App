@@ -106,11 +106,11 @@ All demo accounts use the password `password123`.
 
 | Email               | Who they are |
 |---------------------|--------------|
-| `ravi@example.com`  | Grocery shop owner with 2 ads, one of which already has an applicant |
-| `meera@example.com` | Bakery owner with 3 ads |
-| `arjun@example.com` | Work seeker who has applied to Ravi's grocery helper ad |
+| `ramesh@example.com` | Grocery shop owner with 2 ads, one of which already has an applicant |
+| `suresh@example.com` | Bakery owner with 3 ads |
+| `mahesh@example.com` | Work seeker who has applied to Ramesh's grocery helper ad |
 
-Log in as Ravi to manage Arjun's application. Then log in as Arjun to see the update and the notification.
+Log in as Ramesh to manage Mahesh's application. Then log in as Mahesh to see the update and the notification.
 
 ### Tests and builds
 ```bash
