@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/*
+  Palette borrowed from painted shop signboards: indigo ink, signboard yellow, clean paper.
+  Colors are CSS variables so light/dark is a single switch on <html data-theme>.
+*/
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --text: #1b1f33;
+  --muted: #5b6178;
+  --line: #d9dce6;
+  --heading: #1f2a6b;
+  --brand: #1f2a6b;
+  --on-brand: #ffffff;
+  --brand-hover: #2b3990;
+  --header: #1f2a6b;
+  --on-header: #e9ebf7;
+  --sign: #f2c230;
+  --on-sign: #1f2a6b;
+  --go: #2e7d4f;
+  --go-soft: #e3f2e9;
+  --stop: #b23a2e;
+  --stop-soft: #f8e4e1;
+  --wait: #8a5a00;
+  --wait-soft: #fbf0d4;
+  --info: #2b4fb3;
+  --info-soft: #e4eafb;
+  --focus: #2b4fb3;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10142a;
+    --surface: #191e3b;
+    --text: #e6e8f2;
+    --muted: #a3a8c3;
+    --line: #2f3663;
+    --heading: #ffffff;
+    --brand: #f2c230;
+    --on-brand: #1f2a6b;
+    --brand-hover: #f6d15d;
+    --header: #161b38;
+    --on-header: #d5d8ea;
+    --sign: #f2c230;
+    --on-sign: #1f2a6b;
+    --go: #6fcf97;
+    --go-soft: #173826;
+    --stop: #f08a7e;
+    --stop-soft: #43201d;
+    --wait: #f0c060;
+    --wait-soft: #3d3014;
+    --info: #9db4ff;
+    --info-soft: #1f2a55;
+    --focus: #f2c230;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #10142a;
+  --surface: #191e3b;
+  --text: #e6e8f2;
+  --muted: #a3a8c3;
+  --line: #2f3663;
+  --heading: #ffffff;
+  --brand: #f2c230;
+  --on-brand: #1f2a6b;
+  --brand-hover: #f6d15d;
+  --header: #161b38;
+  --on-header: #d5d8ea;
+  --sign: #f2c230;
+  --on-sign: #1f2a6b;
+  --go: #6fcf97;
+  --go-soft: #173826;
+  --stop: #f08a7e;
+  --stop-soft: #43201d;
+  --wait: #f0c060;
+  --wait-soft: #3d3014;
+  --info: #9db4ff;
+  --info-soft: #1f2a55;
+  --focus: #f2c230;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-heading: var(--heading);
+  --color-brand: var(--brand);
+  --color-on-brand: var(--on-brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-header: var(--header);
+  --color-on-header: var(--on-header);
+  --color-sign: var(--sign);
+  --color-on-sign: var(--on-sign);
+  --color-go: var(--go);
+  --color-go-soft: var(--go-soft);
+  --color-stop: var(--stop);
+  --color-stop-soft: var(--stop-soft);
+  --color-wait: var(--wait);
+  --color-wait-soft: var(--wait-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Signboard type: Archivo squeezed on its width axis, heavy weight. */
+.sign {
+  font-stretch: 68%;
+  font-variation-settings: "wdth" 68;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+  line-height: 0.95;
+}
+
+.sign-mid {
+  font-stretch: 82%;
+  font-variation-settings: "wdth" 82;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* The one orchestrated moment: the signboard headline settles in on first load. */
+@keyframes hang {
+  from {
+    transform: rotate(-2deg) translateY(-6px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.hang {
+  animation: hang 520ms cubic-bezier(0.2, 0.8, 0.3, 1.2) both;
+  transform-origin: 12% 0;
+}
