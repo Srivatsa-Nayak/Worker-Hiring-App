@@ -54,14 +54,14 @@ export default function HomePage() {
 
   const filtered = q || location || category;
   const fieldClass =
-    "w-full min-h-12 rounded-md border-2 border-on-sign/80 bg-white text-[#1b1f33] px-3 placeholder:text-[#5b6178] focus:outline-none focus:ring-4 focus:ring-[#1f2a6b]/30";
+    "w-full min-h-12 rounded-md border border-line bg-bg text-text px-3 placeholder:text-muted/80 focus:border-brand focus:outline-none focus:ring-2 focus:ring-[var(--focus)]/30";
 
   return (
     <>
-      <section className="bg-sign text-on-sign border-b-4 border-on-sign">
+      <section className="bg-surface border-b border-line">
         <div className="mx-auto max-w-5xl px-4 pt-10 pb-8 sm:pt-14">
-          <h1 className="hang sign text-[3.4rem] sm:text-[5.5rem] max-w-[12ch]">Work at shops near you</h1>
-          <p className="mt-4 text-lg max-w-[52ch] font-medium">
+          <h1 className="hang sign text-heading text-[3.2rem] sm:text-[4.75rem] max-w-[12ch]">Work at shops near you</h1>
+          <p className="mt-4 text-lg max-w-[52ch] text-muted">
             Shop owners post the help they need. Workers apply in one step and hear back here.
           </p>
 
@@ -85,13 +85,13 @@ export default function HomePage() {
                 ))}
               </select>
             </label>
-            <button className="min-h-12 rounded-md bg-[#1f2a6b] text-white font-semibold px-6 hover:bg-[#2b3990]">Search</button>
+            <button className="min-h-12 rounded-md bg-brand text-on-brand font-semibold px-6 hover:bg-brand-hover">Search</button>
           </form>
 
           {status === "anon" && (
-            <p className="mt-5 font-medium">
+            <p className="mt-5 text-muted">
               Need a helper for your shop?{" "}
-              <Link href="/register?next=/post" className="underline underline-offset-4 font-semibold">
+              <Link href="/register?next=/post" className="underline underline-offset-4 font-semibold text-text">
                 Post work for free
               </Link>
             </p>

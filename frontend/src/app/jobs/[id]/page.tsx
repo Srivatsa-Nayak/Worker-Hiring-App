@@ -138,15 +138,13 @@ function ApplyPanel({ job, onChange }: { job: Job; onChange: () => void }) {
 
   if (status !== "authed") {
     return (
-      <div className="rounded-md bg-sign text-on-sign p-5 flex flex-wrap items-center justify-between gap-3">
+      <div className="rounded-md border border-line bg-surface p-5 flex flex-wrap items-center justify-between gap-3">
         <p className="font-semibold">Log in or sign up to apply for this work.</p>
         <div className="flex gap-2">
-          <Link href={`/login?next=/jobs/${job.id}`} className="rounded-md bg-[#1f2a6b] text-white font-semibold px-4 py-2.5">
-            Log in
-          </Link>
-          <Link href={`/register?next=/jobs/${job.id}`} className="rounded-md border-2 border-[#1f2a6b] font-semibold px-4 py-2">
+          <LinkButton href={`/login?next=/jobs/${job.id}`}>Log in</LinkButton>
+          <LinkButton href={`/register?next=/jobs/${job.id}`} variant="secondary">
             Sign up
-          </Link>
+          </LinkButton>
         </div>
       </div>
     );

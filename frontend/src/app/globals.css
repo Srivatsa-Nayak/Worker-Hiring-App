@@ -1,86 +1,95 @@
 @import "tailwindcss";
 
 /*
-  Palette borrowed from painted shop signboards: indigo ink, signboard yellow, clean paper.
+  Muted ink and ochre: slate-indigo ink on cool grey, with ochre kept for the pay tags.
   Colors are CSS variables so light/dark is a single switch on <html data-theme>.
 */
 :root {
-  --bg: #f5f6f8;
+  --bg: #f4f5f7;
   --surface: #ffffff;
-  --text: #1b1f33;
-  --muted: #5b6178;
-  --line: #d9dce6;
-  --heading: #1f2a6b;
-  --brand: #1f2a6b;
+  --text: #2b2f3a;
+  --muted: #5f6473;
+  --line: #dde0e6;
+  --heading: #262c45;
+  --brand: #262c45;
   --on-brand: #ffffff;
-  --brand-hover: #2b3990;
-  --header: #1f2a6b;
-  --on-header: #e9ebf7;
-  --sign: #f2c230;
-  --on-sign: #1f2a6b;
-  --go: #2e7d4f;
-  --go-soft: #e3f2e9;
-  --stop: #b23a2e;
-  --stop-soft: #f8e4e1;
-  --wait: #8a5a00;
-  --wait-soft: #fbf0d4;
-  --info: #2b4fb3;
-  --info-soft: #e4eafb;
-  --focus: #2b4fb3;
+  --brand-hover: #363e5e;
+  --header: #262c45;
+  --on-header: #cfd3df;
+  --header-strong: #ffffff;
+  --sign: #d8a63c;
+  --on-sign: #262c45;
+  --sign-soft: #f6ecd6;
+  --on-sign-soft: #6b4e12;
+  --go: #3c7a57;
+  --go-soft: #e5f0e9;
+  --stop: #a6473c;
+  --stop-soft: #f6e6e3;
+  --wait: #7d5a12;
+  --wait-soft: #f6ecd6;
+  --info: #3d4f8f;
+  --info-soft: #e7eaf4;
+  --focus: #3d4f8f;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #10142a;
-    --surface: #191e3b;
-    --text: #e6e8f2;
-    --muted: #a3a8c3;
-    --line: #2f3663;
-    --heading: #ffffff;
-    --brand: #f2c230;
-    --on-brand: #1f2a6b;
-    --brand-hover: #f6d15d;
-    --header: #222c6e;
-    --on-header: #d5d8ea;
-    --sign: #f2c230;
-    --on-sign: #1f2a6b;
-    --go: #6fcf97;
-    --go-soft: #173826;
-    --stop: #f08a7e;
-    --stop-soft: #43201d;
-    --wait: #f0c060;
-    --wait-soft: #3d3014;
-    --info: #9db4ff;
-    --info-soft: #1f2a55;
-    --focus: #f2c230;
+    --bg: #181b24;
+    --surface: #20242f;
+    --text: #e2e4ea;
+    --muted: #a1a6b4;
+    --line: #333847;
+    --heading: #f0f1f5;
+    --brand: #b9c1e4;
+    --on-brand: #1c2030;
+    --brand-hover: #cdd3ee;
+    --header: #222739;
+    --on-header: #b9bdcc;
+    --header-strong: #f0f1f5;
+    --sign: #d1a043;
+    --on-sign: #1f2333;
+    --sign-soft: #3a3222;
+    --on-sign-soft: #e8c879;
+    --go: #7cc59a;
+    --go-soft: #1d3326;
+    --stop: #e48f84;
+    --stop-soft: #3c2422;
+    --wait: #e3bd6a;
+    --wait-soft: #3a3222;
+    --info: #a9b6ea;
+    --info-soft: #262d48;
+    --focus: #b9c1e4;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #10142a;
-  --surface: #191e3b;
-  --text: #e6e8f2;
-  --muted: #a3a8c3;
-  --line: #2f3663;
-  --heading: #ffffff;
-  --brand: #f2c230;
-  --on-brand: #1f2a6b;
-  --brand-hover: #f6d15d;
-  --header: #222c6e;
-  --on-header: #d5d8ea;
-  --sign: #f2c230;
-  --on-sign: #1f2a6b;
-  --go: #6fcf97;
-  --go-soft: #173826;
-  --stop: #f08a7e;
-  --stop-soft: #43201d;
-  --wait: #f0c060;
-  --wait-soft: #3d3014;
-  --info: #9db4ff;
-  --info-soft: #1f2a55;
-  --focus: #f2c230;
+  --bg: #181b24;
+  --surface: #20242f;
+  --text: #e2e4ea;
+  --muted: #a1a6b4;
+  --line: #333847;
+  --heading: #f0f1f5;
+  --brand: #b9c1e4;
+  --on-brand: #1c2030;
+  --brand-hover: #cdd3ee;
+  --header: #222739;
+  --on-header: #b9bdcc;
+  --header-strong: #f0f1f5;
+  --sign: #d1a043;
+  --on-sign: #1f2333;
+  --sign-soft: #3a3222;
+  --on-sign-soft: #e8c879;
+  --go: #7cc59a;
+  --go-soft: #1d3326;
+  --stop: #e48f84;
+  --stop-soft: #3c2422;
+  --wait: #e3bd6a;
+  --wait-soft: #3a3222;
+  --info: #a9b6ea;
+  --info-soft: #262d48;
+  --focus: #b9c1e4;
   color-scheme: dark;
 }
 
@@ -98,6 +107,9 @@
   --color-on-header: var(--on-header);
   --color-sign: var(--sign);
   --color-on-sign: var(--on-sign);
+  --color-sign-soft: var(--sign-soft);
+  --color-on-sign-soft: var(--on-sign-soft);
+  --color-header-strong: var(--header-strong);
   --color-go: var(--go);
   --color-go-soft: var(--go-soft);
   --color-stop: var(--stop);

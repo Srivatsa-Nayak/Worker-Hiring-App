@@ -158,7 +158,7 @@ export function Alert({ kind = "error", children }: { kind?: "error" | "success"
 const statusStyle: Record<ApplicationStatus, string> = {
   APPLIED: "bg-info-soft text-info",
   CALL_LATER: "bg-wait-soft text-wait",
-  INTERVIEW: "bg-sign text-on-sign",
+  INTERVIEW: "bg-sign-soft text-on-sign-soft",
   HIRED: "bg-go-soft text-go",
   REJECTED: "bg-stop-soft text-stop",
 };

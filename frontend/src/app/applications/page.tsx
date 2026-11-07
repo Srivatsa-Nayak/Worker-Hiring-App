@@ -58,7 +58,7 @@ function MyApplications() {
               </div>
 
               {a.status === "INTERVIEW" && a.interviewAt && (
-                <p className="rounded bg-sign text-on-sign px-3 py-2 font-semibold">Interview on {formatDateTime(a.interviewAt)}</p>
+                <p className="rounded bg-sign-soft text-on-sign-soft px-3 py-2 font-semibold">Interview on {formatDateTime(a.interviewAt)}</p>
               )}
               {a.status === "HIRED" && (
                 <p className="rounded bg-go-soft text-go px-3 py-2 font-semibold">

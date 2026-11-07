@@ -65,7 +65,7 @@ function Notifications() {
               <button onClick={() => open(n)} className="w-full text-left p-4 flex gap-3 items-start hover:bg-bg/60">
                 <span
                   aria-hidden="true"
-                  className={`mt-2 w-2.5 h-2.5 rounded-full shrink-0 ${n.read ? "bg-transparent" : "bg-sign ring-2 ring-on-sign/30"}`}
+                  className={`mt-2 w-2.5 h-2.5 rounded-full shrink-0 ${n.read ? "bg-transparent" : "bg-sign"}`}
                 />
                 <span className="flex-1">
                   <span className={n.read ? "" : "font-semibold"}>{n.message}</span>

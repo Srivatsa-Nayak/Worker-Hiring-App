@@ -27,7 +27,7 @@ export default function AboutPage() {
       <ol className="mt-4 grid gap-3">
         {steps.map((s, i) => (
           <li key={s.title} className="flex gap-4 rounded-md border border-line bg-surface p-4">
-            <span className="sign text-4xl text-on-sign bg-sign rounded-sm w-12 h-12 grid place-items-center shrink-0">{i + 1}</span>
+            <span className="sign text-4xl text-on-sign-soft bg-sign-soft rounded-sm w-12 h-12 grid place-items-center shrink-0">{i + 1}</span>
             <div>
               <h3 className="font-semibold text-lg">{s.title}</h3>
               <p className="text-muted">{s.body}</p>

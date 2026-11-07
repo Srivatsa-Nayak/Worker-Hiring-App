@@ -22,7 +22,7 @@ export function Header() {
       key={href}
       href={href}
       aria-current={isActive(href) ? "page" : undefined}
-      className="whitespace-nowrap rounded px-2.5 py-1.5 text-[0.95rem] font-medium text-on-header hover:text-white hover:bg-white/10 aria-[current=page]:text-sign aria-[current=page]:font-semibold"
+      className="whitespace-nowrap rounded px-2.5 py-1.5 text-[0.95rem] font-medium text-on-header hover:text-white hover:bg-white/10 aria-[current=page]:text-header-strong aria-[current=page]:font-semibold aria-[current=page]:underline aria-[current=page]:decoration-sign aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-[6px]"
     >
       {label}
     </Link>
@@ -31,7 +31,7 @@ export function Header() {
   return (
     <header className="bg-header">
       <div className="mx-auto max-w-5xl px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-2">
-        <Link href="/" className="sign text-[1.9rem] text-sign leading-none mr-auto" aria-label="Worker Hiring, home">
+        <Link href="/" className="sign text-[1.9rem] text-header-strong leading-none mr-auto" aria-label="Worker Hiring, home">
           Worker Hiring
         </Link>
 
@@ -51,7 +51,7 @@ export function Header() {
             </Link>
             <Link
               href="/profile"
-              className="rounded-full w-9 h-9 grid place-items-center bg-sign text-on-sign font-bold text-sm"
+              className="rounded-full w-9 h-9 grid place-items-center bg-white/15 text-header-strong font-bold text-sm hover:bg-white/25"
               aria-label="Your profile"
               title={`${user.firstName} ${user.lastName}`}
             >
@@ -64,7 +64,7 @@ export function Header() {
             <Link href="/login" className="rounded px-3 py-1.5 font-medium text-on-header hover:bg-white/10">
               Log in
             </Link>
-            <Link href="/register" className="rounded px-3 py-1.5 font-semibold bg-sign text-on-sign hover:brightness-105">
+            <Link href="/register" className="rounded px-3 py-1.5 font-semibold bg-header-strong text-header hover:opacity-90">
               Sign up
             </Link>
           </div>
